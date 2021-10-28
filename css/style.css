@@ -10,7 +10,7 @@ header{
 }
 .nav_links{
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
 }
 .nav_links a:visited{
     color:#000fff;

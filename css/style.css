@@ -1,7 +1,7 @@
 body{
     font-family: 'Alegreya Sans SC',serif;
     background-color: #f1f1f1;
-    background-image: url(../images/concrete_seamless.png), #f1f1f1;
+    background-image: url("../images/concrete_seamless.png"), #f1f1f1;
 }
 header{
     display: flex;
@@ -56,15 +56,16 @@ header{
       padding: 30px;
       text-align: center;
   }
-  @keyframes logo
-  {
-    from {width: 50px; opacity: 0;}
-    to{width: 425px; opacity: 1;}
+  @keyframes logo{
+    from {width: 50px;
+          opacity: 0;}
+    to{width: 425px;
+      opacity: 1;}
   }
   #logo
   {
+    animation-name: logo;
       animation-iteration-count: 1;
-      animation-name: logo;
       animation-duration: 5s;    
   }
   @media screen and (prefers-reduced-motion) 
@@ -83,8 +84,8 @@ header{
   }
   .skip a
   {
+    -webkit-transition:initial;
        transition: initial;
-      -webkit-transition:initial;
   }
   }
   @media screen and (min-width: 850px) {
